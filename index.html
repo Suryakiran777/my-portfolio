@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Suryakiran Reddy -  Portfolio">
+    <title>Suryakiran Reddy | Holographic Portfolio</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani:wght@300;500;600;700&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <div class="noise-overlay"></div>
+    <canvas id="spiderVerse"></canvas>
+
+    <div class="recruiter-widget">
+        <div class="uplink-menu" id="uplinkMenu">
+            <div class="uplink-header">ESTABLISH UPLINK</div>
+            <a href="mailto:suryakiranreddyg@gmail.com" class="uplink-option">
+                <i class="fas fa-envelope"></i> Send Priority Mail
+            </a>
+            <a href="https://www.linkedin.com/in/suryakiran-reddy-gouthireddy/" target="_blank" class="uplink-option">
+                <i class="fab fa-linkedin"></i> Connect on LinkedIn
+            </a>
+            <a href="tel:+919989053568" class="uplink-option">
+                <i class="fas fa-phone-alt"></i> Direct Line
+            </a>
+            <a href="surya's resume.pdf" download class="uplink-option" style="color:var(--neon-red)">
+                <i class="fas fa-file-download"></i> Download Dossier
+            </a>
+        </div>
+        <div class="uplink-btn" id="uplinkBtn">
+            <i class="fas fa-comment-dots"></i>
+        </div>
+    </div>
+
+    <div id="missionModal" class="modal">
+        <div class="modal-content liquid-glass">
+            <span class="close-modal">&times;</span>
+            <div class="modal-header">
+                <h2 id="modalTitle">PROJECT TITLE</h2>
+                <div class="modal-badge" id="modalBadge">TOP SECRET</div>
+            </div>
+            <div class="modal-body">
+                <p id="modalDesc">Description goes here...</p>
+                <div class="modal-tech" id="modalTech"></div>
+                <div class="modal-links" id="modalLinks"></div>
+            </div>
+        </div>
+    </div>
+
+    <nav>
+        <div class="logo" data-value="Suryakiran Reddy">SURYAKIRAN REDDY</div>
+        <div class="nav-links">
+            <a href="#home" class="nav-item">HQ</a>
+            <a href="#about" class="nav-item">ORIGIN</a>
+            <a href="#experience" class="nav-item">OPS</a>
+            <a href="#projects" class="nav-item">MISSIONS</a>
+            <a href="resume.pdf" download="Suryakiran resume.pdf" download class="nav-resume-btn" style="color:var(--neon-red)">
+                <i class="fas fa-download"></i> DOSSIER
+            </a>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="spider-badge"><i class="fas fa-spider"></i></div>
+            <p class="hero-pre">SYSTEM_BREACH_DETECTED // WELCOME SPIDER-MAN</p>
+            <h1 class="glitch-title" data-text="SURYAKIRAN">SURYAKIRAN REDDY</h1>
+            <div class="role-container">
+                <span class="hacker-text" data-value="Software Engineer">Software Engineer</span>
+                <span class="divider">|</span>
+                <span class="hacker-text" data-value="FRONT END DEV">CLOUD ENTHUSIAST</span>
+            </div>
+            <p class="hero-desc">
+                B.Tech CSE '25 | Exploring Cloud, AWS & Scalable Web Solutions. 
+                <br> <span style="color:var(--neon-blue)">"Dedicated to technology with real-world impact."</span>
+            </p>
+            
+            <div class="btn-group">
+                <a href="#projects" class="btn glitch-btn">VIEW MISSIONS</a>
+                <a href="resume.pdf" download="Suryakiran resume.pdf" class="nav-resume-btn">
+                    <i class="fas fa-download"></i> ACCESS DOSSIER (RESUME)
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="section-header">
+            <h2 class="section-title">ORIGIN STORY</h2>
+            <div class="comic-box">WHO_AM_I?</div>
+        </div>
+        
+        <div class="about-grid">
+            <div class="tilt-card liquid-glass">
+                <p>
+                    I am a <strong>Computer Science Engineer</strong> (Malla Reddy University, 2025) who is passionate about <strong>AWS Cloud</strong>,Web Development and Data Analytics.
+                </p>
+                <p style="margin-top:1rem">
+                    My toolbox covers everything from <strong>AWS </strong> to <strong>Python & HTML</strong>. I’m developing an understanding of how cloud-based and scalable applications are designed and deployed.  </p>
+            </div>
+            
+            <div class="education-stack">
+                <div class="edu-card">
+                    <div class="year">2021-2025</div>
+                    <div class="details">
+                        <h4>B.Tech CSE</h4>
+                        <p>Malla Reddy University | CGPA: 8.0</p>
+                    </div>
+                </div>
+                <div class="edu-card">
+                    <div class="year">2019-2021</div>
+                    <div class="details">
+                        <h4>Intermediate (MPC)</h4>
+                        <p>Aditya  Junior College | 81%</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="section">
+        <div class="section-header">
+            <h2 class="section-title">FIELD OPERATIONS</h2>
+        </div>
+
+        <div class="timeline">
+            <div class="timeline-item left">
+                <div class="timeline-content tilt-card liquid-glass">
+                    <div class="date-badge">OCT 2025 - FEB 2026</div>
+                    <h3>AWS Cloud Intern</h3>
+                    <h4>VYNEDAM</h4>
+                    <ul>
+                        <li>Assisted in deploying sample applications using AWS EC2, S3, IAM, and VPC.</li>
+                        <li>Created and managed IAM users, roles security groups. </li>
+                        <li>Learned cloud fundamentals including networking, storage, and compute services.</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="timeline-item right">
+                <div class="timeline-content tilt-card liquid-glass">
+                    <div class="date-badge">JUN 2022 - AUG 2022</div>
+                    <h3>Canva Designer Intern</h3>
+                    <h4>Dattha Institute</h4>
+                    <ul>
+                        <li>Designed social media graphics for the institute's platforms.</li>
+                        <li> Produced promotional materials like posters, flyers, and banners for events, workshops, and campaigns.</li>
+                        <li>Collaborated with the marketing team to create visually appealing content that aligned with the institute's branding and messaging.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <div class="section-header">
+            <h2 class="section-title">THE ARSENAL</h2>
+        </div>
+
+        <div class="skills-wrapper">
+            <div class="skill-category">
+                <h3><i class="fas fa-shield-alt"></i> AWS CLOUD</h3>
+                <div class="tags-container">
+                    <span class="tag">EC2</span>
+                    <span class="tag">S3</span>
+                    <span class="tag">IAM</span>
+                    <span class="tag">VPC</span>
+                    <span class="tag">CLOUD WATCH </span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3><i class="fas fa-brain"></i> SKILLS</h3>
+                <div class="tags-container">
+                    <span class="tag">Leadership</span>
+                    <span class="tag">Critical Thinking</span>
+                    <span class="tag">Problem Solving</span>
+                    <span class="tag">Communication</span>
+                    <span class="tag">Adaptability</span>
+                    <span class="tag">Teamwork</span>
+                    <span class="tag">Time Management</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3><i class="fas fa-code"></i> DEVELOPMENT</h3>
+                <div class="tags-container">
+                    <span class="tag">Python</span>
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">HTML & CSS</span>
+                    <span class="tag">SQL (MySQL/Postgres)</span>
+                    <span class="tag">Git/GitHub</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="section-header">
+            <h2 class="section-title">MISSION FILES</h2>
+            <div class="comic-box" style="right: 10%; transform: rotate(3deg);">TOP_SECRET</div>
+        </div>
+
+        <div class="projects-grid">
+            
+            <div class="project-card tilt-card liquid-glass project-trigger" data-id="timetable">
+                <div class="folder-tab">Efficiency & Usability Study</div>
+                <div class="recognition-badge">
+                    <i class="fas fa-star"></i> 
+                </div>
+                <div class="project-img-placeholder" style="background: linear-gradient(45deg, #cc2b5e, #753a88);">
+                    <i class="fas fa-calendar-alt"></i>
+                </div>
+                <h3>AI&NLP Offline LLMs</h3>
+                <p>Built an offline benchmarking framework for evaluating Masked and Causal Language Models (MLMs, CLMs), focusing on low-spec hardware for privacy-conscious AI deployments. Designed evaluation pipelines using BLEU, ROUGE, and Perplexity to assess generation quality and model accuracy.</p>
+                <div class="tech-stack">
+                    <span>Python</span>
+                    <span>Machine Learning</span>
+                    <span>NLP</span>
+                    <span>HuggingFace</span>
+                </div>
+                <div class="click-hint">Click for Briefing >></div>
+            </div>
+
+            <div class="project-card tilt-card liquid-glass project-trigger" data-id="disease">
+                <div class="folder-tab">Deep Learning</div>
+                <div class="project-img-placeholder" style="background: linear-gradient(45deg, #1a2a6c, #b21f1f);">
+                    <i class="fas fa-heartbeat"></i>
+                </div>
+                <h3>Spotify Data Analysis</h3>
+                <p>Analyzed Spotify data to uncover hidden trends in music consumption through clear visuals, empowering users to explore insights on artists, streams, albums, and more. </p>
+                <div class="tech-stack">
+                    <span>Python</span>
+                    <span>Spotify API</span>
+                    <span>SQL</span>
+                    <span>Flask</span>
+                </div>
+                <div class="click-hint">Click for Briefing >></div>
+            </div>
+
+            <div class="project-card tilt-card liquid-glass project-trigger" data-id="skin">
+                <div class="folder-tab">Machine Learning</div>
+                <div class="project-img-placeholder" style="background: linear-gradient(45deg, #2b5876, #4e4376);">
+                    <i class="fas fa-microscope"></i>
+                </div>
+                <h3>Transact Expert</h3>
+                <p>TransactXpert is a Online transaction management system designed to streamline financial transactions for users. It offers a user-friendly interface and robust functionality.</p>
+                <div class="tech-stack">
+                    <span>Python</span>
+                    <span>OpenCV</span>
+                    <span>Mysql</span>
+                </div>
+                <div class="click-hint">Click for Briefing >></div>
+            </div>
+
+            
+            <div class="project-card tilt-card liquid-glass project-trigger" data-id="quadra">
+                <div class="folder-tab">ROBOTICS</div>
+                <div class="project-img-placeholder" style="background: linear-gradient(45deg, #f12711, #f5af19);">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <h3>Quadra Robot</h3>
+                <p>A quadruped robotic project mimicking animal movement using Arduino and accelerometers.</p>
+                <div class="tech-stack">
+                    <span>Arduino</span>
+                    <span>IoT</span>
+                    <span>C++</span>
+                </div>
+                <div class="click-hint">Click for Briefing >></div>
+            </div>
+
+             <div class="project-card tilt-card liquid-glass project-trigger" data-id="ats">
+                <div class="folder-tab">DEV_TOOLS</div>
+                <div class="project-img-placeholder" style="background: linear-gradient(45deg, #3a1c71, #d76d77);">
+                    <i class="fas fa-file-alt"></i>
+                </div>
+                <h3>ATS Resume Builder</h3>
+                <p>Designed an ATS-friendly resume builder ensuring optimal formatting for machine parsing.</p>
+                <div class="tech-stack">
+                    <span>HTML/CSS</span>
+                    <span>Python</span>
+                    <span>Auto-Format</span>
+                </div>
+                <div class="click-hint">Click for Briefing >></div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="section-header">
+            <h2 class="section-title">CERTIFIED ACCESS</h2>
+        </div>
+        <div class="cert-grid">
+            <div class="cert-item">Introduction to HTML5</div>
+            <div class="cert-item">Introduction to Cloud Computing</div>
+            <div class="cert-item">AWS Cloud Technical Essentials</div>
+            <div class="cert-item">Introduction to Modern AI</div>
+            <div class="cert-item">Introduction to MongoDB by MongoDB</div>
+            <div class="cert-item">Computer Hardware Basics from Cisco Networking Academy</div>
+            <div class="cert-item">AI Fundamentals with IBM SkillsBuild</div>
+            <div class="cert-item">Data Analytics Job Simulation by Deloitte</div>
+            <div class="cert-item">Coursera: Programming for Everybody (Getting Started with Python)</div>
+            <div class="cert-item">Coursera: What is Data Science?</div>
+            <div class="cert-item">Coursera: Prepare Data for Exploration </div>
+            
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="section-header">
+            <h2 class="section-title">ESTABLISH UPLINK</h2>
+        </div>
+
+        <div class="contact-container">
+            <div class="contact-box tilt-card liquid-glass">
+                <i class="fas fa-envelope"></i>
+                <h3>EMAIL</h3>
+                <a href="mailto:cherukubhuvan@gmail.com">suryakiranreddyg@gmail.com</a>
+            </div>
+            
+            <div class="contact-box tilt-card liquid-glass">
+                <i class="fas fa-phone-alt"></i>
+                <h3>PHONE</h3>
+                <a href="tel:+916304098517">+91-9989053568</a>
+            </div>
+            
+            <div class="contact-box tilt-card liquid-glass">
+                <i class="fab fa-github"></i>
+                <h3>GITHUB</h3>
+                <a href="https://github.com/Suryakiran777" target="_blank">@Suryakiran777</a>
+            </div>
+            
+            <div class="contact-box tilt-card liquid-glass">
+                <i class="fab fa-linkedin-in"></i>
+                <h3>LINKEDIN</h3>
+                <a href="https://www.linkedin.com/in/suryakiran-reddy-gouthireddy/" target="_blank">Connect Now</a>
+            </div>
+        </div>
+        
+        <footer class="footer">
+            <p>DESIGNED BY SURYAKIRAN REDDY // <span style="color:var(--neon-red)">SPIDER-VERSE EDITION</span></p>
+        </footer>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
